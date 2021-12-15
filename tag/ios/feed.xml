@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="http://localhost:4000/tag/ios/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-12-15T14:51:05+09:00</updated>
+  <updated>2021-12-16T00:51:14+09:00</updated>
   <id>http://localhost:4000/tag/ios/feed.xml</id>
 
   
@@ -32,10 +32,10 @@
 
   
     <entry>
-      <title type="html">iOS TIL (1) - Swift 기본</title>
-      <link href="http://localhost:4000/ios-basic" rel="alternate" type="text/html" title="iOS TIL (1) - Swift 기본" />
-      <published>2021-12-14T21:00:00+09:00</published>
-      <updated>2021-12-14T21:00:00+09:00</updated>
+      <title type="html">iOS TIL (1) - Swift Playground</title>
+      <link href="http://localhost:4000/ios-basic" rel="alternate" type="text/html" title="iOS TIL (1) - Swift Playground" />
+      <published>2021-10-21T12:07:00+09:00</published>
+      <updated>2021-10-21T12:07:00+09:00</updated>
       <id>http://localhost:4000/ios-basic</id>
       <content type="html" xml:base="http://localhost:4000/ios-basic">&lt;p&gt;&lt;span class=&quot;table-of-contents-list&quot;&gt;iOS Today I Learn!&lt;/span&gt;&lt;/p&gt;
 &lt;ul class=&quot;table-of-contents-list&quot;&gt;
@@ -43,11 +43,68 @@
     &lt;li&gt;&lt;a href=&quot;./ios-snapkit&quot;&gt;iOS TIL (2) - SnapKit 라이브러리&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.&lt;/p&gt;
+&lt;p&gt;간단한 Swift 코드를 테스트 할 수 있다.
+페어 프로그램겸 간단한 테스트기라고 할 수 있겠다.&lt;/p&gt;
 
-&lt;p&gt;Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.&lt;/p&gt;
+&lt;p&gt;오늘은 간단하게 예제와 함께 Playground를 살펴봐야겠다.&lt;/p&gt;
 
-&lt;p&gt;But, in a larger sense, we can not dedicate-we can not consecrate-we can not hallow-this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us-that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion-that we here highly resolve that these dead shall not have died in vain-that this nation, under God, shall have a new birth of freedom-and that government of the people, by the people, for the people shall not perish from the earth.&lt;/p&gt;</content>
+&lt;h3 id=&quot;keyword&quot;&gt;Keyword&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Var: 타입 변경이 가능한 변수 타입 (const정도로 알아두자)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Let: 타입 변경이 불가능한 변수 타입 (kotlin이 따라한듯?)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Comment: 주석으로 //로 같다. ⌘ + /&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Tuple: 여려가지 타입의 값들을 저장해주는 배열&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-swift highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;B&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;tuple&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;string&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.45&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;tuple2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tuple&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tuple&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;A&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// B = B - A    Cannot assign to value: &apos;B&apos; is a &apos;let&apos; constant&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;function&quot;&gt;Function&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Arc4random_uniform (범위) 랜덤 함수&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;String Interpolation: String에 변수 넣을 땐 (변수)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;flow-control&quot;&gt;Flow Control&lt;/h2&gt;
+&lt;p&gt;코드의 흐름을 조절해주는 도구들&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;If else&lt;/li&gt;
+  &lt;li&gt;while loop&lt;/li&gt;
+  &lt;li&gt;for loop&lt;/li&gt;
+  &lt;li&gt;swifth statement&lt;/li&gt;
+  &lt;li&gt;etc…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;While 과 Repeat while의 차이&lt;/p&gt;
+
+&lt;p&gt;While은 조건 -&amp;gt; 코드 수행 이지만,
+Repeat while은 코듣수행 -&amp;gt; 조건이다.&lt;/p&gt;
+
+&lt;h2 id=&quot;scope&quot;&gt;Scope()&lt;/h2&gt;
+&lt;p&gt;코드블럭 안에 있는 모든 것&lt;/p&gt;
+
+&lt;p&gt;{ Scope }&lt;/p&gt;</content>
 
       
       
@@ -76,8 +133,8 @@
     </entry>
   
     <entry>
-      <title type="html">iOS TIL (2) - SnapKit 라이브러리</title>
-      <link href="http://localhost:4000/ios-snapkit" rel="alternate" type="text/html" title="iOS TIL (2) - SnapKit 라이브러리" />
+      <title type="html">iOS TIL (2) - Flow Control</title>
+      <link href="http://localhost:4000/ios-snapkit" rel="alternate" type="text/html" title="iOS TIL (2) - Flow Control" />
       <published>2012-09-01T19:00:00+09:00</published>
       <updated>2012-09-01T19:00:00+09:00</updated>
       <id>http://localhost:4000/ios-snapkit</id>
@@ -87,23 +144,12 @@
     &lt;li&gt;&lt;a href=&quot;./ios-snapkit&quot;&gt;iOS TIL (2) - SnapKit 라이브러리&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded
-  elements within paragraphs.&lt;/p&gt;
+&lt;p&gt;Flow Contorl에 대한 더 자세한 요약 정리.&lt;/p&gt;
 
 
 &lt;hr /&gt;
 
-&lt;h1 id=&quot;heading1&quot;&gt;Heading 1&lt;/h1&gt;
-
-&lt;h2 id=&quot;heading2&quot;&gt;Heading 2&lt;/h2&gt;
-
-&lt;h3 id=&quot;heading3&quot;&gt;Heading 3&lt;/h3&gt;
-
-&lt;h4 id=&quot;heading4&quot;&gt;Heading 4&lt;/h4&gt;
-
-&lt;h5 id=&quot;heading5&quot;&gt;Heading 5&lt;/h5&gt;
-
-&lt;h6 id=&quot;heading6&quot;&gt;Heading 6&lt;/h6&gt;
+&lt;h1 id=&quot;heading1&quot;&gt;Flow Control이란?&lt;/h1&gt;
 
 &lt;hr /&gt;
 
@@ -556,7 +602,7 @@ c.draw = function() {
       
 
       <author>
-          <name>john</name>
+          <name>fachidiot</name>
         
         
       </author>
