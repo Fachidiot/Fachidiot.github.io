@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- 웹 폰트 설정-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
     <!-- syntax.css -->
     <link rel="stylesheet" href="/assets/built/syntax.css">
@@ -27,6 +28,7 @@
 
     <!-- Custom.css-->
     <link rel="stylesheet" type="text/css" href="/assets/built/custom.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- highlight.js -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <style>.hljs { background: none; }</style>
@@ -54,7 +56,7 @@
     <meta property="og:title" content="Git 기본 사용법(1) 시작하기" />
     <meta property="og:description" content="Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated," />
     <meta property="og:url" content="http://localhost:4000/git-basic" />
-    <meta property="og:image" content="http://localhost:4000/assets/built/images/background-git.png" />
+    <meta property="og:image" content="http://localhost:4000/assets/built/images/git-icon.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
     <meta property="article:published_time" content="2021-12-14T21:00:00+09:00" />
@@ -64,7 +66,7 @@
     <meta name="twitter:title" content="Git 기본 사용법(1) 시작하기" />
     <meta name="twitter:description" content="Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated," />
     <meta name="twitter:url" content="http://localhost:4000/" />
-    <meta name="twitter:image" content="http://localhost:4000/assets/built/images/background-git.png" />
+    <meta name="twitter:image" content="http://localhost:4000/assets/built/images/git-icon.png" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="Fachidiot DevLog" />
     <meta name="twitter:label2" content="Filed under" />
@@ -86,7 +88,7 @@
     "url": "http://localhost:4000/git-basic",
     "image": {
         "@type": "ImageObject",
-        "url": "http://localhost:4000/assets/built/images/background-git.png",
+        "url": "http://localhost:4000/assets/built/images/git-icon.png",
         "width": 2000,
         "height": 666
     },
@@ -185,7 +187,7 @@ into the {body} of the default.hbs template -->
             </header>
 
 <!--            -->
-<!--            <figure class="post-full-image" style="background-image: url(/assets/built/images/background-git.png)">-->
+<!--            <figure class="post-full-image" style="background-image: url(/assets/built/images/git-icon.png)">-->
 <!--            </figure>-->
 <!--            -->
 
@@ -266,7 +268,7 @@ into the {body} of the default.hbs template -->
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
-                            s.src = 'https://xxxxxxxx.disqus.com/embed.js';
+                            s.src = 'https://fachidiot.disqus.com/embed.js';
                             s.setAttribute('data-timestamp', +new Date());
                             (d.head || d.body).appendChild(s);
                         })();
@@ -306,6 +308,12 @@ into the {body} of the default.hbs template -->
                                 
                                 
                                   
+                                
+                                  
+                                    
+                                  
+                                
+                                  
                                     
                                   
                                 
@@ -319,19 +327,6 @@ into the {body} of the default.hbs template -->
                                 
                                   
                                 
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/a-full-and-comprehensive-style-test">A Full and Comprehensive Style Test</a></li>
-                                        
-                                    
                                   
                                 
                             </ul>
@@ -349,6 +344,57 @@ into the {body} of the default.hbs template -->
 
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
+                
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/git-command">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/git-icon.png)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/git-command">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">Git</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Git 기본 사용법(1) 시작하기</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p>Fourscore and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.
+
+</p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/built/images/author-logo.jpg" alt="fachidiot" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/fachidiot/">fachidiot</a>
+                        </span>
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
 
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             
@@ -356,30 +402,26 @@ into the {body} of the default.hbs template -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/ios-basic">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/background-ios.png)"></div>
+            <a class="post-card-image-link" href="/portfolio">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/economy-icon.jpg)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/ios-basic">
+            <a class="post-card-content-link" href="/portfolio">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Ios</span>
+                                <span class="post-card-tags">Economy</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">iOS TIL (1) - Swift Playground</h2>
+                    <h2 class="post-card-title">이번주 내 포트폴리오</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>iOS Today I Learn!
-
-    iOS TIL (1) - Swift 기본
-    iOS TIL (2) - SnapKit 라이브러리
-
+                        <p>하이닉스
 
 </p>
                     

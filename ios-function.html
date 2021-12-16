@@ -11,11 +11,12 @@
 
 
 
-    <title>Advanced Markdown tips</title>
+    <title>iOS TIL (3) - Function</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- 웹 폰트 설정-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
     <!-- syntax.css -->
     <link rel="stylesheet" href="/assets/built/syntax.css">
@@ -27,6 +28,7 @@
 
     <!-- Custom.css-->
     <link rel="stylesheet" type="text/css" href="/assets/built/custom.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- highlight.js -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <style>.hljs { background: none; }</style>
@@ -45,30 +47,30 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="iOS Developer Playground" />
     <link rel="shortcut icon" href="http://localhost:4000/assets/built/images/author-logo.jpg" type="image/png" />
-    <link rel="canonical" href="http://localhost:4000/advanced-markdown" />
+    <link rel="canonical" href="http://localhost:4000/ios-function" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="Fachidiot DevLog" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Advanced Markdown tips" />
-    <meta property="og:description" content="There are lots of powerful things you can do with the Ghost editor If you've gotten pretty comfortable with all the basics of writing in Ghost, then you may enjoy some more advanced tips about the types of things you can do with Markdown! As with the last post about" />
-    <meta property="og:url" content="http://localhost:4000/advanced-markdown" />
-    <meta property="og:image" content="http://localhost:4000/assets/built/images/background-game.jpg" />
+    <meta property="og:title" content="iOS TIL (3) - Function" />
+    <meta property="og:description" content="iOS Today I Learn! iOS TIL (1) - Playground iOS TIL (2) - Flow Control iOS TIL (3) - Function iOS TIL (4) - Optional Function 기능을 수행하는 코드 블럭 { … } = Method Object에 속해 기능을 수행한다. Function은 Object없이도 독립적으로 호출이 된다. Func functionName(Lparam: ParamType) -&gt; ReturnType {" />
+    <meta property="og:url" content="http://localhost:4000/ios-function" />
+    <meta property="og:image" content="http://localhost:4000/assets/built/images/ios-icon.png" />
     <meta property="article:publisher" content="https://www.facebook.com/" />
     <meta property="article:author" content="https://www.facebook.com/" />
-    <meta property="article:published_time" content="2017-07-27T14:00:00+09:00" />
-    <meta property="article:modified_time" content="2017-07-27T14:00:00+09:00" />
-    <meta property="article:tag" content="Game" />
+    <meta property="article:published_time" content="2021-10-23T09:18:00+09:00" />
+    <meta property="article:modified_time" content="2021-10-23T09:18:00+09:00" />
+    <meta property="article:tag" content="Ios" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Advanced Markdown tips" />
-    <meta name="twitter:description" content="There are lots of powerful things you can do with the Ghost editor If you've gotten pretty comfortable with all the basics of writing in Ghost, then you may enjoy some more advanced tips about the types of things you can do with Markdown! As with the last post about" />
+    <meta name="twitter:title" content="iOS TIL (3) - Function" />
+    <meta name="twitter:description" content="iOS Today I Learn! iOS TIL (1) - Playground iOS TIL (2) - Flow Control iOS TIL (3) - Function iOS TIL (4) - Optional Function 기능을 수행하는 코드 블럭 { … } = Method Object에 속해 기능을 수행한다. Function은 Object없이도 독립적으로 호출이 된다. Func functionName(Lparam: ParamType) -&gt; ReturnType {" />
     <meta name="twitter:url" content="http://localhost:4000/" />
-    <meta name="twitter:image" content="http://localhost:4000/assets/built/images/background-game.jpg" />
+    <meta name="twitter:image" content="http://localhost:4000/assets/built/images/ios-icon.png" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="Fachidiot DevLog" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="Game" />
+    <meta name="twitter:data2" content="Ios" />
     <meta name="twitter:site" content="@" />
     <meta name="twitter:creator" content="@" />
     <meta property="og:image:width" content="1400" />
@@ -83,18 +85,18 @@
         "name": "Fachidiot DevLog",
         "logo": "http://localhost:4000/"
     },
-    "url": "http://localhost:4000/advanced-markdown",
+    "url": "http://localhost:4000/ios-function",
     "image": {
         "@type": "ImageObject",
-        "url": "http://localhost:4000/assets/built/images/background-game.jpg",
+        "url": "http://localhost:4000/assets/built/images/ios-icon.png",
         "width": 2000,
         "height": 666
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://localhost:4000/advanced-markdown"
+        "@id": "http://localhost:4000/ios-function"
     },
-    "description": "There are lots of powerful things you can do with the Ghost editor If you've gotten pretty comfortable with all the basics of writing in Ghost, then you may enjoy some more advanced tips about the types of things you can do with Markdown! As with the last post about"
+    "description": "iOS Today I Learn! iOS TIL (1) - Playground iOS TIL (2) - Flow Control iOS TIL (3) - Function iOS TIL (4) - Optional Function 기능을 수행하는 코드 블럭 { … } = Method Object에 속해 기능을 수행한다. Function은 Object없이도 독립적으로 호출이 된다. Func functionName(Lparam: ParamType) -&gt; ReturnType {"
 }
     </script>
 
@@ -107,7 +109,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Advanced Markdown tips" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="iOS TIL (3) - Function" href="/feed.xml" />
 
 
 </head>
@@ -167,94 +169,80 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <article class="post-full  tag-game post tag-game ">
+        <article class="post-full  tag-ios post tag-ios ">
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="27 July 2017">27 July 2017</time>
+                    <time class="post-full-meta-date" datetime="23 October 2021">23 October 2021</time>
                     
                         <span class="date-divider">/</span>
                         
                             
-                               <a href='/tag/game/'>GAME</a>
+                               <a href='/tag/ios/'>IOS</a>
                             
                         
                     
                 </section>
-                <h1 class="post-full-title">Advanced Markdown tips</h1>
+                <h1 class="post-full-title">iOS TIL (3) - Function</h1>
             </header>
 
 <!--            -->
-<!--            <figure class="post-full-image" style="background-image: url(/assets/built/images/background-game.jpg)">-->
+<!--            <figure class="post-full-image" style="background-image: url(/assets/built/images/ios-icon.png)">-->
 <!--            </figure>-->
 <!--            -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p>There are lots of powerful things you can do with the Ghost editor</p>
-<p>If you've gotten pretty comfortable with <a href="/the-editor/">all the basics</a> of writing in Ghost, then you may
-    enjoy some more advanced tips about the types of things you can do with Markdown!</p>
-<p>As with the last post about the editor, you'll want to be actually editing this post as you read it so that you can
-    see all the Markdown code we're using.</p>
-<h2 id="specialformatting">Special formatting</h2>
-<p>As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for
-    example:</p>
-<ul>
-    <li><s>strike through</s></li>
-    <li><mark>highlight</mark></li>
-    <li>*escaped characters*</li>
+                    <p><span class="table-of-contents-list">iOS Today I Learn!</span></p>
+<ul class="table-of-contents-list">
+    <li><a href="./ios-playground">iOS TIL (1) - Playground</a></li>
+    <li><a href="./ios-flowcontrol">iOS TIL (2) - Flow Control</a></li>
+    <li><a href="./ios-function">iOS TIL (3) - Function</a></li>
+    <li><a href="./ios-optional">iOS TIL (4) - Optional</a></li>
 </ul>
-<h2 id="writingcodeblocks">Writing code blocks</h2>
-<p>There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block.
-    Inline code is formatted by wrapping any word or words in back-ticks, <code>like this</code>. Larger snippets of
-    code can be displayed across multiple lines using triple back ticks:</p>
-<pre><code>.my-link {
-    text-decoration: underline;
-}
-</code></pre>
-<p>If you want to get really fancy, you can even add syntax highlighting using <a
-        href="http://prismjs.com/">Prism.js</a>.</p>
-<h2 id="fullbleedimages">Full bleed images</h2>
-<p>One neat trick which you can use in Markdown to distinguish between different types of images is to add a
-    <code>#hash</code> value to the end of the source URL, and then target images containing the hash with special
-    styling. For example:
-</p>
-<p><img src="https://casper.ghost.org/v1.0.0/images/walking.jpg#full" alt="walking"></p>
-<p>which is styled with...</p>
-<pre><code>img[src$=&quot;#full&quot;] {
-    max-width: 100vw;
-}
-</code></pre>
-<p>This creates full-bleed images in the Casper theme, which stretch beyond their usual boundaries right up to the edge
-    of the window. Every theme handles these types of things slightly differently, but it's a great trick to play with
-    if you want to have a variety of image sizes and styles.</p>
-<h2 id="referencelists">Reference lists</h2>
-<p><strong>The quick brown <a href="https://en.wikipedia.org/wiki/Fox" title="Wikipedia: Fox">fox</a>, jumped over the
-        lazy <a href="https://en.wikipedia.org/wiki/Dog" title="Wikipedia: Dog">dog</a>.</strong></p>
-<p>Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite
-    reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain
-    full separation between content and its source or reference.</p>
-<h2 id="creatingfootnotes">Creating footnotes</h2>
-<p>The quick brown fox<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> jumped over the lazy dog<sup
-        class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>.</p>
-<p>Footnotes are a great way to add additional contextual details when appropriate. Ghost will automatically add
-    footnote content to the very end of your post.</p>
-<h2 id="fullhtml">Full HTML</h2>
-<p>Perhaps the best part of Markdown is that you're never limited to just Markdown. You can write HTML directly in the
-    Ghost editor and it will just work as HTML usually does. No limits! Here's a standard YouTube embed code as an
-    example:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0"
-    allowfullscreen></iframe>
-<hr class="footnotes-sep">
-<section class="footnotes">
-    <ol class="footnotes-list">
-        <li id="fn1" class="footnote-item">
-            <p>Foxes are red <a href="#fnref1" class="footnote-backref">↩︎</a></p>
-        </li>
-        <li id="fn2" class="footnote-item">
-            <p>Dogs are usually not red <a href="#fnref2" class="footnote-backref">↩︎</a></p>
-        </li>
-    </ol>
+
+<h3 id="function">Function</h3>
+<p>기능을 수행하는 코드 블럭 { … } = Method</p>
+
+<p>Object에 속해 기능을 수행한다.</p>
+
+<p>Function은 Object없이도 독립적으로 호출이 된다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">Func</span> <span class="nf">functionName</span><span class="p">(</span><span class="kt">Lparam</span><span class="p">:</span> <span class="kt">ParamType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">ReturnType</span>
+<span class="p">{</span>     
+    <span class="c1">// ...</span>
+    <span class="n">returnreturnValue</span> 
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="함수에-변수-넣기">함수에 변수 넣기</h3>
+
+<p>C++이나 C언어의 포인터 처럼 사용할 수 있다. inout 키워드를 사용함으로써</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">func</span> <span class="nf">incrementAndPrint</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">Int</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">value</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="함수에-함수-넣기">함수에 함수 넣기</h3>
+
+<p>일반 함수를 var 타입으로 참조하여 받아와준다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 일반 함수</span>
+<span class="kd">func</span> <span class="nf">substract</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+<span class="p">}</span>
+
+<span class="k">var</span> <span class="nv">function</span> <span class="o">=</span> <span class="n">substract</span>
+<span class="nf">function</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="함수를-사용할때">함수를 사용할때</h3>
+
+<p>함수는 길게 말고 짧게 만들자…
+길게 만들게 되어도 쪼개는 연습을 하자!</p>
+
                 </div>
             </section>
 
@@ -318,13 +306,13 @@ into the {body} of the default.hbs template -->
                     <div id="disqus_thread"></div>
                     <script>
                         var disqus_config = function () {
-                            var this_page_url = 'http://localhost:4000/advanced-markdown';
-                            var this_page_identifier = '/advanced-markdown';
-                            var this_page_title = 'Advanced Markdown tips';
+                            var this_page_url = 'http://localhost:4000/ios-function';
+                            var this_page_identifier = '/ios-function';
+                            var this_page_title = 'iOS TIL (3) - Function';
                         };
                         (function() {
                             var d = document, s = d.createElement('script');
-                            s.src = 'https://xxxxxxxx.disqus.com/embed.js';
+                            s.src = 'https://fachidiot.disqus.com/embed.js';
                             s.setAttribute('data-timestamp', +new Date());
                             (d.head || d.body).appendChild(s);
                         })();
@@ -354,7 +342,7 @@ into the {body} of the default.hbs template -->
                         <header class="read-next-card-header">
                             <small class="read-next-card-header-sitetitle">&mdash; Fachidiot DevLog &mdash;</small>
                             
-                                <h3 class="read-next-card-header-title"><a href="/tag/game/">Game</a></h3>
+                                <h3 class="read-next-card-header-title"><a href="/tag/ios/">Ios</a></h3>
                             
                         </header>
                         <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
@@ -372,22 +360,34 @@ into the {body} of the default.hbs template -->
                                   
                                 
                                   
-                                
-                                  
                                     
                                         
                                         
-                                            <li><a href="/private-sites">Making your site private</a></li>
+                                            <li><a href="/ios-flowcontrol">iOS TIL (2) - Flow Control</a></li>
                                         
                                     
                                   
                                 
                                   
                                     
+                                        
+                                        
+                                            <li><a href="/ios-optional">iOS TIL (4) - Optional</a></li>
+                                        
+                                    
                                   
                                 
                                   
+                                    
+                                  
                                 
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/ios-playground">iOS TIL (1) - Swift Playground</a></li>
+                                        
+                                    
                                   
                                 
                                   
@@ -395,9 +395,9 @@ into the {body} of the default.hbs template -->
                             </ul>
                         </div>
                         <footer class="read-next-card-footer">
-                            <a href="/tag/game/">
+                            <a href="/tag/ios/">
                                 
-                                    See all 1 posts  →
+                                    See all 3 posts  →
                                 
                             </a>
                         </footer>
@@ -411,26 +411,34 @@ into the {body} of the default.hbs template -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/private-sites">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/background-game.jpg)"></div>
+            <a class="post-card-image-link" href="/ios-optional">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/ios-icon.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/private-sites">
+            <a class="post-card-content-link" href="/ios-optional">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Game</span>
+                                <span class="post-card-tags">Ios</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">Making your site private</h2>
+                    <h2 class="post-card-title">iOS TIL (4) - Optional</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>Sometimes you might want to put your site behind closed doors If you've got a publication that you don't want the world to see yet because it's not ready to launch, you can</p>
+                        <p>iOS Today I Learn!
+
+    iOS TIL (1) - Playground
+    iOS TIL (2) - Flow Control
+    iOS TIL (3) - Function
+    iOS TIL (4) - Optional
+
+
+</p>
                     
                 </section>
             </a>
@@ -463,26 +471,34 @@ into the {body} of the default.hbs template -->
 
     <article class="post-card post-template">
         
-            <a class="post-card-image-link" href="/themes">
-                <div class="post-card-image" style="background-image: url(/assets/built/images/background-android.png)"></div>
+            <a class="post-card-image-link" href="/ios-playground">
+                <div class="post-card-image" style="background-image: url(/assets/built/images/ios-icon.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/themes">
+            <a class="post-card-content-link" href="/ios-playground">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Android</span>
+                                <span class="post-card-tags">Ios</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">Setting up your own Ghost theme</h2>
+                    <h2 class="post-card-title">iOS TIL (1) - Swift Playground</h2>
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>Creating a totally custom design for your publication Ghost comes with a beautiful default theme called Casper, which is designed to be a clean, readable publication layout and can be easily adapted for</p>
+                        <p>iOS Today I Learn!
+
+    iOS TIL (1) - Playground
+    iOS TIL (2) - Flow Control
+    iOS TIL (3) - Function
+    iOS TIL (4) - Optional
+
+
+</p>
                     
                 </section>
             </a>
@@ -522,18 +538,18 @@ into the {body} of the default.hbs template -->
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">Advanced Markdown tips</div>
+    <div class="floating-header-title">iOS TIL (3) - Function</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Advanced+Markdown+tips&amp;url=https://fachidiot.github.io/advanced-markdown"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=iOS+TIL+%283%29+-+Function&amp;url=https://fachidiot.github.io/ios-function"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://fachidiot.github.io/advanced-markdown"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://fachidiot.github.io/ios-function"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 
